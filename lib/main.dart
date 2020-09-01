@@ -1,5 +1,5 @@
 
-import 'reto2/ChallengeTwo.dart';
+import 'description_place.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -32,8 +32,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
-        backgroundColor: Colors.appColor,
-        body: ChallengeTwo(),
+        body: DescriptionPlace(),
       )
 
       );//MyHomePage(title: 'Flutter Demo Home Page'),

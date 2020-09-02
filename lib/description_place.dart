@@ -4,6 +4,12 @@ import 'package:flutter/material.dart';
 
 class DescriptionPlace extends StatelessWidget {
 
+  String descriptionPlace;
+  String namePlace;
+  int stars;
+
+  DescriptionPlace(this.namePlace, this.stars, this.descriptionPlace);
+
   @override
   Widget build(BuildContext context) {
     final iconStar =
@@ -54,15 +60,7 @@ class DescriptionPlace extends StatelessWidget {
       left: 2.0,
     ),
         child: Text(
-    """
-        Knuckles Duwili Ellla can be recognized as one 
-     of the dream destination for any hiker. 
-     Difficulty of reaching the destination has increased 
-     the beauty of this location. It’s around 32Km Trek up
-     and down. There are few roads you can use to reach 
-     this destination. Some of the roads those I’ve heard 
-     are Rambukoluwa, Atanwala, Meemure, Ranamure.
-    """,
+          descriptionPlace,
     textAlign: TextAlign.left,
           style: TextStyle(
             fontSize: 14,
@@ -82,7 +80,7 @@ class DescriptionPlace extends StatelessWidget {
     left: 20.0,
     ),
     child: Text(
-    "Duwili Ella",
+    namePlace,
     style: TextStyle(
     fontSize: 30.0,
     fontWeight: FontWeight.w900,

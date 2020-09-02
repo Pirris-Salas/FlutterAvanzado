@@ -9,6 +9,18 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+
+  String description =
+  """
+        Knuckles Duwili Ellla can be recognized as one 
+     of the dream destination for any hiker. 
+     Difficulty of reaching the destination has increased 
+     the beauty of this location. It’s around 32Km Trek up
+     and down. There are few roads you can use to reach 
+     this destination. Some of the roads those I’ve heard 
+     are Rambukoluwa, Atanwala, Meemure, Ranamure.
+    """;
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -32,7 +44,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
-        body: DescriptionPlace(),
+        body: DescriptionPlace("Duwili Ella", 3, description),
       )
 
       );//MyHomePage(title: 'Flutter Demo Home Page'),

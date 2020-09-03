@@ -1,10 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
+import 'review_list.dart';
 
 class DescriptionPlace extends StatelessWidget {
   String descriptionPlace;
   String namePlace;
   int stars;
+
+
 
   DescriptionPlace(this.namePlace, this.stars, this.descriptionPlace);
 
@@ -43,11 +47,13 @@ class DescriptionPlace extends StatelessWidget {
       ),
     );
 
-    final placeDescription = Row(
+    final placeDescription = Flexible(
+        child: Row(
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Container(
+          //width: MediaQuery.of(context).size.width - 4,
           margin: EdgeInsets.only(
             top: 17,
             right: 2.0,
@@ -55,14 +61,21 @@ class DescriptionPlace extends StatelessWidget {
           ),
           child: Text(
             descriptionPlace,
+            //overflow: TextOverflow.ellipsis,
+            //maxLines: 20,
             textAlign: TextAlign.left,
             style: TextStyle(
               fontSize: 14,
               fontFamily: "Lato",
+              wordSpacing: 1.0,
+              fontWeight: FontWeight.normal
+              //letterSpacing: 0.5
+
             ),
           ),
         ),
       ],
+    )
     );
 
     final titleStars = Row(
@@ -101,6 +114,7 @@ class DescriptionPlace extends StatelessWidget {
           children: <Widget>[
             titleStars,
             placeDescription,
+            ReviewList(),
           ],
         )
       ],

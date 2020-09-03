@@ -13,10 +13,11 @@ class MyApp extends StatelessWidget {
   String description =
   """
         Knuckles Duwili Ellla can be recognized as one 
-     of the dream destination for any hiker. 
+     of the dream destination for any hiker.
      Difficulty of reaching the destination has increased 
      the beauty of this location. It’s around 32Km Trek up
-     and down. There are few roads you can use to reach 
+     and down.\n\
+     There are few roads you can use to reach 
      this destination. Some of the roads those I’ve heard 
      are Rambukoluwa, Atanwala, Meemure, Ranamure.
     """;

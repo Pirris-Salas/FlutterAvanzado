@@ -10,6 +10,7 @@ class ReviewList extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         new Review(imageUrl, "Luis Salas", "1 Review * 5 Photos", "Very nice place, I'll recommend it to all my fellows forever!",4),
         new Review(imageSuqui, "Fiorella Vargas", "3 Review * 2 Photos", "Horrible place, there was no a sushi restaurant, unbelievable!!",2),

@@ -21,7 +21,7 @@ class Review extends StatelessWidget {
     final userName = Container(
       margin: EdgeInsets.only(
         top: 20.0,
-        left: 1.0,
+        left: 10.0,
       ),
       child: Text(
         name,
@@ -39,7 +39,7 @@ class Review extends StatelessWidget {
         Container(
           margin: EdgeInsets.only(
             top: 1.0,
-            left: 1.0,
+            left: 10.0,
             right: 1.5,
           ),
           child: Text(
@@ -60,7 +60,7 @@ class Review extends StatelessWidget {
       //width: MediaQuery.of(context).size.width * 0.6,
       margin: EdgeInsets.only(
         top: 1.0,
-        left: 1.0,
+        left: 10.0,
       ),
         child: Text(
           comment,
@@ -92,10 +92,10 @@ class Review extends StatelessWidget {
     final Widget picture = Container(
       margin: EdgeInsets.only(
           top: 20.0,
-          right: 20.0
+          left: 10.0
       ),
-      height: 95.0,
-      width: 95.0,
+      height: 83.0,
+      width: 83.0,
       decoration: BoxDecoration(
           shape: BoxShape.circle,
           image: DecorationImage(

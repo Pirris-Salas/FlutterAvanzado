@@ -47,8 +47,7 @@ class DescriptionPlace extends StatelessWidget {
       ),
     );
 
-    final placeDescription = Flexible(
-        child: Row(
+    final placeDescription = Row(
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
@@ -68,14 +67,14 @@ class DescriptionPlace extends StatelessWidget {
               fontSize: 14,
               fontFamily: "Lato",
               wordSpacing: 1.0,
-              fontWeight: FontWeight.normal
+              fontWeight: FontWeight.w500,
+              color: Color(0xFF56575a)
               //letterSpacing: 0.5
 
             ),
           ),
         ),
       ],
-    )
     );
 
     final titleStars = Row(
@@ -114,7 +113,6 @@ class DescriptionPlace extends StatelessWidget {
           children: <Widget>[
             titleStars,
             placeDescription,
-            ReviewList(),
           ],
         )
       ],

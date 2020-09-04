@@ -15,6 +15,9 @@ class ReviewList extends StatelessWidget{
         new Review(imageUrl, "Luis Salas", "1 Review * 5 Photos", "Very nice place, I'll recommend it to all my fellows forever!",4),
         new Review(imageSuqui, "Fiorella Vargas", "3 Review * 2 Photos", "Horrible place, there was no a sushi restaurant, unbelievable!!",2),
         new Review(imageRamirez, "Ramirez Jose Ramirez", "1 Review * 1 Photos", "Beautiful place, I loved it. Next time I'll go with my puppy, Max.",5),
+        new Review(imageSuqui, "Fiorella Vargas", "3 Review * 2 Photos", "Horrible place, there was no a sushi restaurant, unbelievable!!",2),
+        new Review(imageSuqui, "Fiorella Vargas", "3 Review * 2 Photos", "Horrible place, there was no a sushi restaurant, unbelievable!!",2),
+        new Review(imageSuqui, "Fiorella Vargas", "3 Review * 2 Photos", "Horrible place, there was no a sushi restaurant, unbelievable!!",2),
       ],
     );
   }

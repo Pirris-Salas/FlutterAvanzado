@@ -53,6 +53,12 @@ flutter:
      - assets/img/profile.jpg
      - assets/img/suqui.jpg
      - assets/img/ramirez.jpg
+     - assets/img/camping.jpg
+     - assets/img/fall.jpg
+     - assets/img/forest.jpg
+     - assets/img/rock.jpg
+     - assets/img/waterfall.jpg
+     - assets/img/waterfall2.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

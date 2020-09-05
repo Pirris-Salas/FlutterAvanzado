@@ -1,3 +1,5 @@
+import 'package:flutter/services.dart';
+
 import 'review_list.dart';
 import 'description_place.dart';
 import 'gradient_back.dart';
@@ -6,11 +8,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
 void main() {
+
+  //Este fragmento de código hace que la barra superior, donde se ve la hora,
+  //sea de color transparente
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    statusBarColor: Colors.transparent
+  ));
+
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
 
+  String title = "Popular";
   String description =
   """
         Knuckles Duwili Ellla can be recognized as one 
@@ -54,7 +65,7 @@ class MyApp extends StatelessWidget {
                 ReviewList(),
               ],
             ),
-            GradientBack(),
+            GradientBack(title),
           ],
         )
       )

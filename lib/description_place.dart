@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
-import 'review_list.dart';
+import 'button_purple.dart';
 
 class DescriptionPlace extends StatelessWidget {
   String descriptionPlace;
@@ -110,9 +110,11 @@ class DescriptionPlace extends StatelessWidget {
     return Stack(
       children: <Widget>[
         Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             titleStars,
             placeDescription,
+            ButtonPurple("Navigate"),
           ],
         )
       ],

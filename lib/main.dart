@@ -1,11 +1,8 @@
 import 'package:flutter/services.dart';
-
-import 'review_list.dart';
-import 'description_place.dart';
-import 'header_appbar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'platzi_trips.dart';
 
 void main() {
 
@@ -21,18 +18,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
 
-  String title = "Popular";
-  String description =
-  """
-        Knuckles Duwili Ellla can be recognized as one 
-     of the dream destination for any hiker.
-     Difficulty of reaching the destination has increased 
-     the beauty of this location. It’s around 32Km Trek up
-     and down.
-     There are few roads you can use to reach 
-     this destination. Some of the roads those I’ve heard 
-     are Rambukoluwa, Atanwala, Meemure, Ranamure.
-    """;
+
 
   // This widget is the root of your application.
   @override
@@ -56,19 +42,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Scaffold(
-        body: Stack(
-          children: <Widget>[
-            ListView(
-              children: <Widget>[
-                DescriptionPlace("Duwili Ella", 3, description),
-                ReviewList(),
-              ],
-            ),
-            HeaderAppBar(),
-          ],
-        )
-      )
+      home: PlatziTrips(),
 
       );//MyHomePage(title: 'Flutter Demo Home Page'),
   }

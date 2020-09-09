@@ -2,6 +2,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:my_trips_flutter_app/platzi_trips_cupertino.dart';
 import 'platzi_trips.dart';
 
 void main() {
@@ -42,7 +43,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: PlatziTrips(),
+      home: PlatziTripsCupertino(),
 
       );//MyHomePage(title: 'Flutter Demo Home Page'),
   }

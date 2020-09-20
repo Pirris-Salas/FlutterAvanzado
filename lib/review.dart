@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
+import 'package:flutter/rendering.dart';
 import 'counting_stars.dart';
 
 // ignore: must_be_immutable
@@ -57,35 +58,35 @@ class Review extends StatelessWidget {
     );
 
     final userComment = Container(
-      //width: MediaQuery.of(context).size.width * 0.6,
-      margin: EdgeInsets.only(
-        top: 1.0,
-        left: 10.0,
-      ),
-        child: Text(
-          comment,
-          textAlign: TextAlign.left,
-          //maxLines: 3,
-          //overflow: TextOverflow.ellipsis,
-          style: TextStyle(
-            fontFamily: "Lato",
-            fontSize: 13.0,
-            fontWeight: FontWeight.bold,
-          ),
+        //width: MediaQuery.of(context).size.width * 0.6,
+        margin: EdgeInsets.only(
+          top: 1.0,
+          left: 10.0,
         ),
+          child: SizedBox(
+            width: 300.0,
+            child: Text(
+              comment,
+              textAlign: TextAlign.left,
+              //maxLines: 3,
+              //overflow: TextOverflow.ellipsis,
+              style: TextStyle(
+                fontFamily: "Lato",
+                fontSize: 13.0,
+                fontWeight: FontWeight.w900,
+              ),
+            ),
+          ),
+          );
 
-    );
-
-    final userDetails = Flexible(
-        child: Column(
+    final userDetails = Column(
       crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisSize: MainAxisSize.min,
       children: <Widget>[
         userName,
         userInfo,
         userComment
-
       ],
-    )
     );
 
 

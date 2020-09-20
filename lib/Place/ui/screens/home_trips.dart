@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_trips_flutter_app/review_list.dart';
-import 'description_place.dart';
+import 'file:///C:/Users/pirris/AndroidStudioProjects/FlutterAvanzado/LearningFlutter/lib/Place/ui/widgets/review_list.dart';
+import '../widgets/description_place.dart';
 import 'header_appbar.dart';
 
 class HomeTrips extends StatelessWidget{

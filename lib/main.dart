@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:generic_bloc_provider/generic_bloc_provider.dart';
 import 'package:my_trips_flutter_app/User/bloc/bloc_user.dart';
+import 'package:my_trips_flutter_app/User/ui/screens/sign_in_screen.dart';
 import 'package:my_trips_flutter_app/platzi_trips_cupertino.dart';
 import 'platzi_trips.dart';
 
@@ -35,7 +36,8 @@ class MyApp extends StatelessWidget {
             primarySwatch: Colors.appColor,
             visualDensity: VisualDensity.adaptivePlatformDensity,
           ),
-          home: PlatziTrips(),
+          //home: PlatziTrips(),
+          home: SignInScreen(),
 
         ),
         bloc: BlocUser(),
